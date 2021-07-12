@@ -10,14 +10,14 @@ exclude: >
     )$
 repos:
   - repo: git://github.com/pre-commit/pre-commit-hooks
-    rev: v2.2.3
+    rev: v4.0.1
     hooks:
     - id: check-yaml
     - id: end-of-file-fixer
     - id: trailing-whitespace
 
   - repo: https://github.com/pre-commit/mirrors-yapf
-    rev: v0.27.0
+    rev: v0.31.0
     hooks:
     - id: yapf
       name: yapf
@@ -25,7 +25,7 @@ repos:
       args: ['-i']
 
   - repo: https://github.com/PyCQA/pylint
-    rev: pylint-2.4.4
+    rev: v2.9.3
     hooks:
     - id: pylint
       language: system
@@ -38,7 +38,7 @@ repos:
         - sphinx==2.4.4
 
   - repo: https://github.com/markdownlint/markdownlint
-    rev: 'v0.9.0'
+    rev: 'v0.11.0'
     hooks:
     - id: markdownlint
       # currently mistaking comment lines in code cells for headers!?
