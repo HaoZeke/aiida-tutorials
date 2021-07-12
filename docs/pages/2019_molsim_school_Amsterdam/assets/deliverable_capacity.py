@@ -29,7 +29,6 @@ def update_raspa_parameters(parameters, pressure):
 
 class DcMethane(WorkChain):
     """Compute methane deliverable capacity for a given structure."""
-
     @classmethod
     def define(cls, spec):
         """Define workflow specification.

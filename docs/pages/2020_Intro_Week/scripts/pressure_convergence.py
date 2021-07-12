@@ -132,7 +132,6 @@ def bundle_step_data(step0, **kwargs):
 
 class PressureConvergence(WorkChain):
     """Relax a structure using Newton's algorithm on the first derivative of the energy (minus the pressure)."""
-
     @classmethod
     def define(cls, spec):
         """Define spec of WorkChain."""
